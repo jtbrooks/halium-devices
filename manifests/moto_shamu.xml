@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="jtb"
+            fetch="https://github.com/jtbrooks"
+            revision="halium-7.1" />
+    <remote name="ubp"
+	    fetch="https://github.com/ubports" />
+
+	<remove-project name="device/qcom/common" />
+
+    <project path="device/moto/shamu" name="android_device_moto_shamu" remote="jtb" />
+    <project path="device/qcom/common" name="android_device_qcom_common" remote="ubp" revision="oneplus3/6.0.1" />
+
+    <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="jtb" />
+
+    <project path="vendor/moto" name="proprietary_vendor_motorola" remote="them" />
+
+</manifest>
